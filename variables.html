@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var number = 10;
+      var number;
+      document.write(number);
+      document.write("<br>");
+      let number2 = 15;
+      document.write(number2);
+      document.write("<br>");
+      const number3 = 25;
+      document.write(number3);
+      document.write("<br>");
+      number = 50;
+      document.write(number);
+      //   document.write("<br>");
+      //   number3 = 100;
+      //   document.write(number3);
+      document.write("<br>");
+      number2 = 200;
+      document.write(number2);
+
+      //Hoisting
+
+      document.write("<br>");
+      number4;
+      document.write(number4);
+      var number4 = 150;
+
+      //------------
+      var name = "deva";
+
+      //after 100 of line unfortunatly called same variavle 'name' -- then it will give latest value if use Let variable then it will give old value
+      var name = "Devender"; //
+      document.write("<br>");
+
+      // Block leve scope Let
+      {
+        let numbe5 = 500;
+        document.write(number5);
+      }
+      document.write(number5);
+      document.write("<br>");
+      // Block leve scope var here not available block level scope
+      {
+        var numbe5 = 500;
+        document.write(number5);
+      }
+      document.write(number5);
+
+
+      //roules
+      var name$_4 = 50 /// it will support
+      var name(#$_4 = 50 /// it will not support
+      var 45name(#$_4 = 50 /// it will not support
+
+      //case sencitive
+
+      var name ="deva"
+      document.write(Name) // not supprt
+      var firstName = "Devender"
+    </script>
+  </body>
+</html>

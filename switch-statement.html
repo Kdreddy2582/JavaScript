@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Dialog box which will ask for your favorite number.</p>
+
+    <button onclick="mySample()">Try it</button>
+
+    <p id="example"></p>
+    <script>
+      // var number = 0;
+      // switch (number) {
+      //   case 1:
+      //     document.write("number is 1");
+      //     break;
+      //   case 2:
+      //     document.write("Number is 2");
+      //     break;
+      //   case 3:
+      //     document.write("Number is 3");
+      //     break;
+      //   default:
+      //     document.write("Nothing");
+      // }
+
+      //var choice;
+      // var choice = prompt("Enter your choice color");
+      // switch (choice) {
+      //   case "1":
+      //     document.write("My favourite color is White ");
+      //     break;
+      //   case "2":
+      //     document.write("My favourite color is Red ");
+      //     break;
+      //   case "3":
+      //     document.write("My favourite color is Blue ");
+      //     break;
+      //   case "4":
+      //     document.write("My favourite color is Green ");
+      //     break;
+      //   default:
+      //     document.write("Invalid choice");
+      // }
+
+      function mySample() {
+        var text;
+        var favNumber = prompt("What's your favorite number?", "3");
+        switch (favNumber) {
+          case "1":
+            text = "Well yeah number one !";
+            break;
+          case "3":
+            text = "It's my favorite too!";
+            break;
+          case "100":
+            text = "Wow what a high number!";
+            break;
+          default:
+            text = "I have never heard of that one..";
+        }
+        document.getElementById("example").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
