@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="success.html"
+      method="post"
+      name="myForm"
+      onsubmit="return validateForm()"
+    >
+      Name: <input type="text" name="name" /><br /><br />
+      Password: <input type="password" name="password" /><br /><br />
+      Phone No: <input type="number" name="number" /><br /><br />
+      <input type="submit" value="Register" />
+    </form>
+    <script>
+      function validateForm() {
+        var name = document.myForm.name.value;
+        var password = document.myForm.password.value;
+        var number = document.myForm.number.value;
+        if (name == null || name == "") {
+          alert("Name can't be blank");
+          return false;
+        } else if (name.length < 4 || name.length > 8) {
+          alert("Name must be 4 to 8 charectors");
+          return false;
+        } else if (password.length < 6) {
+          alert("Password must be 6 charectors");
+          return false;
+        } else if (number.length > 10 || number.length < 10) {
+          alert("Phone number must be 10 digits only ");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
